@@ -22,9 +22,9 @@ namespace Tannenbaum
         {
             int stammhöhe, kronenhöhe, stammbreite=0;
 
-            Convert.ToInt32(textstammhöhe.Text=stammhöhe);
-            Convert.ToInt32(textkronenhöhe.Text=kronenhöhe);
-            Convert.ToInt32(textstammbreite.Text=stammbreite);
+            stammhöhe = Convert.ToInt32(textstammhöhe.Text);
+            kronenhöhe=Convert.ToInt32(textkronenhöhe.Text);
+            stammbreite=Convert.ToInt32(textstammbreite.Text);
 
             int currentNumber = 0;
 
@@ -45,7 +45,7 @@ namespace Tannenbaum
 
             for (int k = 1; k <= stammhöhe; k++)
             {
-                for (int e = 0; e <= kronenhöhe - (stammbreite / 2); e++)
+                for (int r = 0; r <= kronenhöhe - (stammbreite / 2); r++)
                 {
                     Console.Write(" ");
                 }
