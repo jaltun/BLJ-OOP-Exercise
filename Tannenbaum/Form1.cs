@@ -21,41 +21,51 @@ namespace Tannenbaum
         private void zeichnen_Click(object sender, EventArgs e)
         {
             int stammhöhe, kronenhöhe, stammbreite=0;
+            string zeichnung;
 
             stammhöhe = Convert.ToInt32(textstammhöhe.Text);
-            kronenhöhe=Convert.ToInt32(textkronenhöhe.Text);
-            stammbreite=Convert.ToInt32(textstammbreite.Text);
+            kronenhöhe = Convert.ToInt32(textkronenhöhe.Text);
+            stammbreite = Convert.ToInt32(textstammbreite.Text);
 
+            Tanne t = new Tanne();
+            t.Stammbreite = stammbreite;
+            t.Stammhoehe = stammhöhe;
+            t.Kronenhoehe = kronenhöhe;
+            t.Zeichne(); 
+            textBoxZeichnung.Text = t.Zeichnung;
+
+
+            /*
             int currentNumber = 0;
 
             for (int i = 0; i <= kronenhöhe * 2 - 1; i += 2)
             {
-
                 for (int h = 0; h <= kronenhöhe - currentNumber; h++)
                 {
-                    Console.Write(" ");
+                    textBoxZeichnung.Text += " ";
                 }
                 for (int h = 0; h <= i; h++)
                 {
-                    Console.Write("*");
+                    textBoxZeichnung.Text += "*";
                 }
                 currentNumber++;
-                Console.Write("\n");
+                textBoxZeichnung.Text += Environment.NewLine;
             }
 
             for (int k = 1; k <= stammhöhe; k++)
             {
                 for (int r = 0; r <= kronenhöhe - (stammbreite / 2); r++)
                 {
-                    Console.Write(" ");
+                    textBoxZeichnung.Text += " ";
                 }
                 for (int b = 1; b <= stammbreite; b++)
                 {
-                    Console.Write("*");
+                    textBoxZeichnung.Text += "*";
                 }
-                Console.WriteLine();
+                textBoxZeichnung.Text += Environment.NewLine;
             }
 
+            */
         }
     }
 }

@@ -34,7 +34,7 @@
             this.textstammbreite = new System.Windows.Forms.TextBox();
             this.textstammhöhe = new System.Windows.Forms.TextBox();
             this.textkronenhöhe = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxZeichnung = new System.Windows.Forms.TextBox();
             this.zeichnen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -61,12 +61,13 @@
             this.kronenhöhe.AutoSize = true;
             this.kronenhöhe.Location = new System.Drawing.Point(26, 169);
             this.kronenhöhe.Name = "kronenhöhe";
-            this.kronenhöhe.Size = new System.Drawing.Size(141, 30);
+            this.kronenhöhe.Size = new System.Drawing.Size(94, 20);
             this.kronenhöhe.TabIndex = 2;
             this.kronenhöhe.Text = "kronenhöhe";
             // 
             // textstammbreite
             // 
+            this.textstammbreite.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textstammbreite.Location = new System.Drawing.Point(152, 66);
             this.textstammbreite.Name = "textstammbreite";
             this.textstammbreite.Size = new System.Drawing.Size(141, 26);
@@ -74,6 +75,7 @@
             // 
             // textstammhöhe
             // 
+            this.textstammhöhe.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textstammhöhe.Location = new System.Drawing.Point(152, 114);
             this.textstammhöhe.Name = "textstammhöhe";
             this.textstammhöhe.Size = new System.Drawing.Size(140, 26);
@@ -81,36 +83,41 @@
             // 
             // textkronenhöhe
             // 
+            this.textkronenhöhe.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textkronenhöhe.Location = new System.Drawing.Point(152, 169);
             this.textkronenhöhe.Name = "textkronenhöhe";
             this.textkronenhöhe.Size = new System.Drawing.Size(140, 26);
             this.textkronenhöhe.TabIndex = 5;
             // 
-            // textBox3
+            // textBoxZeichnung
             // 
-            this.textBox3.Location = new System.Drawing.Point(27, 257);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(668, 423);
-            this.textBox3.TabIndex = 6;
+            this.textBoxZeichnung.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBoxZeichnung.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxZeichnung.Location = new System.Drawing.Point(27, 257);
+            this.textBoxZeichnung.Multiline = true;
+            this.textBoxZeichnung.Name = "textBoxZeichnung";
+            this.textBoxZeichnung.Size = new System.Drawing.Size(439, 483);
+            this.textBoxZeichnung.TabIndex = 6;
             // 
             // zeichnen
             // 
-            this.zeichnen.Location = new System.Drawing.Point(459, 169);
+            this.zeichnen.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.zeichnen.Location = new System.Drawing.Point(332, 169);
             this.zeichnen.Name = "zeichnen";
-            this.zeichnen.Size = new System.Drawing.Size(236, 30);
+            this.zeichnen.Size = new System.Drawing.Size(134, 30);
             this.zeichnen.TabIndex = 7;
             this.zeichnen.Text = "Tanne zeichnen";
-            this.zeichnen.UseVisualStyleBackColor = true;
+            this.zeichnen.UseVisualStyleBackColor = false;
             this.zeichnen.Click += new System.EventHandler(this.zeichnen_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 479);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(588, 752);
             this.Controls.Add(this.zeichnen);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxZeichnung);
             this.Controls.Add(this.textkronenhöhe);
             this.Controls.Add(this.textstammhöhe);
             this.Controls.Add(this.textstammbreite);
@@ -132,7 +139,7 @@
         private System.Windows.Forms.TextBox textstammbreite;
         private System.Windows.Forms.TextBox textstammhöhe;
         private System.Windows.Forms.TextBox textkronenhöhe;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxZeichnung;
         private System.Windows.Forms.Button zeichnen;
     }
 }
