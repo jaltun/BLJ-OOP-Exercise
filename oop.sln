@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reisedauer_Mond", "Reisedau
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warenkorb", "Warenkorb\Warenkorb.csproj", "{4971F84E-6BE4-4CD1-9C80-4B945D21BA70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto Simulator", "Auto Simulator\Auto Simulator.csproj", "{EF719249-775B-48C3-A7C0-1263EC5F966D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4971F84E-6BE4-4CD1-9C80-4B945D21BA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4971F84E-6BE4-4CD1-9C80-4B945D21BA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4971F84E-6BE4-4CD1-9C80-4B945D21BA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF719249-775B-48C3-A7C0-1263EC5F966D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF719249-775B-48C3-A7C0-1263EC5F966D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF719249-775B-48C3-A7C0-1263EC5F966D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF719249-775B-48C3-A7C0-1263EC5F966D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
