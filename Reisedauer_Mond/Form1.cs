@@ -17,5 +17,16 @@ namespace Reisedauer_Mond
             InitializeComponent();
         }
 
+        private void Reisedauer_Click(object sender, EventArgs e)
+        {
+            int kmH = 0;
+            
+            Mondreise mondreise= new Mondreise(kmH);
+
+            if (Tage.Checked)
+                textBoxausgabe.Text=mondreise.GetTravelDurationDays().ToString();
+            else
+                textBoxausgabe.Text=mondreise.GetTravelDurationHours().ToString();
+        }
     }
 }

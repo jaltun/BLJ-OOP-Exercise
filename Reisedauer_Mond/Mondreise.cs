@@ -9,20 +9,23 @@ namespace Reisedauer_Mond
     internal class Mondreise
     {
         private double kmh = 0;
+
+        private int entfernungMond = 385000;
         
-        public Mondreise(double kmh)
+        public Mondreise(double speedkmh)
         {
-
+            kmh = speedkmh;
         }
 
-        public double ReiseTage()
-        {
 
+        public double GetTravelDurationDays()
+        {
+            return this.GetTravelDurationHours() / 24;
         }
 
-        public double ReiseStunden()
+        public double GetTravelDurationHours()
         {
-            return this.ReiseTage() / 24;
+            return entfernungMond / 24;
         }
 
     }

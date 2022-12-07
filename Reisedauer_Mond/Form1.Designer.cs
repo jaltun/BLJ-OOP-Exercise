@@ -68,7 +68,6 @@
             this.Geschwindigkeit.Size = new System.Drawing.Size(179, 20);
             this.Geschwindigkeit.TabIndex = 2;
             this.Geschwindigkeit.Text = "Geschwindigkeit in km/h";
-            this.Geschwindigkeit.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxgeschwindigkeit
             // 
@@ -85,6 +84,7 @@
             this.Reisedauer.TabIndex = 4;
             this.Reisedauer.Text = "Reisedauer berechnen";
             this.Reisedauer.UseVisualStyleBackColor = true;
+            this.Reisedauer.Click += new System.EventHandler(this.Reisedauer_Click);
             // 
             // Ausgabe
             // 
